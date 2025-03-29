@@ -31,6 +31,9 @@
   --rufous: hsl(2, 85%, 35%);
   --black: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
+  --success-green: #28a745;
+  --error-red: #d02b2b;
+  --warning-orange: #fdab38;
 
   /**
    * typography
@@ -585,8 +588,13 @@ textarea.contact-input {
 .contact-icon {
   background-color: var(--glaucous);
   font-size: 2.4rem;
-  padding: 20px;
-  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex; /* Enables Flexbox */
+  justify-content: center; /* Centers icon horizontally */
+  align-items: center; /* Centers icon vertically */
+  border-radius: 50%; /* Makes it circular */
+  flex-shrink: 0;
 }
 
 .contact-item-title {
@@ -674,7 +682,7 @@ textarea.contact-input {
 
 .footer {
   background-color: var(--independence);
-  padding-block: 60px;
+  padding-block: 10px;
 }
 
 .copyright {
@@ -1116,7 +1124,7 @@ textarea.contact-input {
   top: 18%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #28a745; /* Green success color */
+  background: var(--success-green); /* Green success color */
   color: white;
   padding: 15px 25px;
   border-radius: 8px;
@@ -1133,7 +1141,10 @@ textarea.contact-input {
 }
 
 .custom-alert.error {
-  background: #d02b2b; /* Green success color */
+  background: var(--error-red);
+}
+.custom-alert.warning {
+  background: var(--warning-orange);
 }
 
 /* Additional Products style */
