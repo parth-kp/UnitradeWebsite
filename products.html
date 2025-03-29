@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products - Unitrade Nexus</title>
+    <link rel="shortcut icon" href="./logo.png" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="top">
+    <header class="header" data-header>
+      <div class="container">
+        <a href="index.html">
+          <h1 class="logo">Unitrade Nexus</h1>
+        </a>
+
+        <button
+          class="nav-toggle-btn"
+          aria-label="Toggle Menu"
+          data-nav-toggle-btn
+        >
+          <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+          <ion-icon name="close-outline" class="close-icon"></ion-icon>
+        </button>
+
+        <nav class="navbar container">
+          <ul class="navbar-list">
+            <li>
+              <a href="index.html#products" class="navbar-link" data-nav-link
+                >Products</a
+              >
+            </li>
+
+            <li>
+              <a href="index.html#about" class="navbar-link" data-nav-link
+                >About Us</a
+              >
+            </li>
+
+            <li>
+              <a href="#contact" class="btn btn-primary">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- Hero Section -->
+        <section class="section" style="padding-top: 120px">
+          <div class="container">
+            <h2 class="h2 section-title">Our Product Catalog</h2>
+            <p class="section-text">
+              Discover our complete range of high-quality products designed to
+              meet your diverse needs. From industrial chemicals to eco-friendly
+              solutions, we deliver excellence in every category.
+            </p>
+
+            <!-- Product Filters -->
+            <div class="product-filters">
+              <button class="filter-btn active" data-filter="all">
+                All Products
+              </button>
+              <button class="filter-btn" data-filter="paints">Paints</button>
+              <button class="filter-btn" data-filter="chemicals">
+                Chemicals
+              </button>
+              <button class="filter-btn" data-filter="agrochemicals">
+                Agrochemicals
+              </button>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-grid">
+              <!-- Product 1 -->
+              <div class="product-item" data-category="paints">
+                <div class="product-image">
+                  <img
+                    src="./assets/images/Products/shade.jfif"
+                    alt="Universal Stainer - Blue"
+                    class="img-cover"
+                  />
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Universal Stainer - Blue</h3>
+                  <p class="product-description">
+                    Premium quality universal stainer in vibrant blue shade,
+                    perfect for mixing with water-based or oil-based paints to
+                    create custom colors.
+                  </p>
+                  <ul class="product-features">
+                    <li>High color concentration</li>
+                    <li>Compatible with all paint types</li>
+                    <li>Weather resistant</li>
+                  </ul>
+                  <div class="product-meta">
+                    <span class="product-category">Paints</span>
+                    <button
+                      class="product-details-btn"
+                      data-product="universal-stainer-blue"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 2 -->
+              <div class="product-item" data-category="paints">
+                <div class="product-image">
+                  <img
+                    src="/api/placeholder/400/320"
+                    alt="Universal Stainer - Red"
+                    class="img-cover"
+                  />
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Universal Stainer - Red</h3>
+                  <p class="product-description">
+                    Rich red universal stainer with superior pigment quality for
+                    vibrant, long-lasting color transformations in any paint
+                    base.
+                  </p>
+                  <ul class="product-features">
+                    <li>UV resistant formulation</li>
+                    <li>Easy to blend</li>
+                    <li>Consistent color results</li>
+                  </ul>
+                  <div class="product-meta">
+                    <span class="product-category">Paints</span>
+                    <button
+                      class="product-details-btn"
+                      data-product="universal-stainer-red"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 3 -->
+              <div class="product-item" data-category="chemicals">
+                <div class="product-image">
+                  <img
+                    src="/api/placeholder/400/320"
+                    alt="Industrial Solvent"
+                    class="img-cover"
+                  />
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Industrial Solvent</h3>
+                  <p class="product-description">
+                    Professional-grade industrial solvent designed for effective
+                    cleaning and paint thinning applications across various
+                    industries.
+                  </p>
+                  <ul class="product-features">
+                    <li>Fast evaporation rate</li>
+                    <li>High solvency power</li>
+                    <li>99.9% purity guaranteed</li>
+                  </ul>
+                  <div class="product-meta">
+                    <span class="product-category">Chemicals</span>
+                    <button
+                      class="product-details-btn"
+                      data-product="industrial-solvent"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 4 -->
+              <div class="product-item" data-category="agrochemicals">
+                <div class="product-image">
+                  <img
+                    src="/api/placeholder/400/320"
+                    alt="Organic Plant Growth Stimulator"
+                    class="img-cover"
+                  />
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Organic Plant Growth Stimulator</h3>
+                  <p class="product-description">
+                    Natural plant growth stimulator that enhances crop yields
+                    while maintaining soil health and biodiversity.
+                  </p>
+                  <ul class="product-features">
+                    <li>100% organic formulation</li>
+                    <li>Increases yield by up to 30%</li>
+                    <li>Safe for all crop types</li>
+                  </ul>
+                  <div class="product-meta">
+                    <span class="product-category">Agrochemicals</span>
+                    <button
+                      class="product-details-btn"
+                      data-product="growth-stimulator"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 5 -->
+              <div class="product-item" data-category="chemicals">
+                <div class="product-image">
+                  <img
+                    src="/api/placeholder/400/320"
+                    alt="Specialized Adhesive"
+                    class="img-cover"
+                  />
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Specialized Adhesive</h3>
+                  <p class="product-description">
+                    High-performance industrial adhesive designed for
+                    applications requiring exceptional bond strength and
+                    durability.
+                  </p>
+                  <ul class="product-features">
+                    <li>Resistant to extreme temperatures</li>
+                    <li>Waterproof and chemical resistant</li>
+                    <li>Fast curing time</li>
+                  </ul>
+                  <div class="product-meta">
+                    <span class="product-category">Chemicals</span>
+                    <button
+                      class="product-details-btn"
+                      data-product="specialized-adhesive"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 6 -->
+              <div class="product-item" data-category="paints">
+                <div class="product-image">
+                  <img
+                    src="/api/placeholder/400/320"
+                    alt="Universal Stainer - Yellow"
+                    class="img-cover"
+                  />
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Universal Stainer - Yellow</h3>
+                  <p class="product-description">
+                    Brilliant yellow universal stainer with high tinting
+                    strength for achieving precise color matches in various
+                    paint bases.
+                  </p>
+                  <ul class="product-features">
+                    <li>Excellent lightfastness</li>
+                    <li>Concentrated formula</li>
+                    <li>Smooth integration with base paints</li>
+                  </ul>
+                  <div class="product-meta">
+                    <span class="product-category">Paints</span>
+                    <button
+                      class="product-details-btn"
+                      data-product="universal-stainer-yellow"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Product Details Modal -->
+        <div id="productModal" class="product-modal">
+          <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-grid">
+              <div class="modal-image">
+                <img
+                  src=""
+                  alt=""
+                  id="modalImage"
+                  style="width: 100%; border-radius: var(--radius-10)"
+                />
+              </div>
+              <div class="modal-info">
+                <h2 id="modalTitle" class="h3" style="margin-bottom: 15px"></h2>
+                <p id="modalDescription" style="margin-bottom: 20px"></p>
+                <h4 style="color: var(--white); margin-bottom: 10px">
+                  Key Features:
+                </h4>
+                <ul id="modalFeatures" class="product-features"></ul>
+                <h4 style="color: var(--white); margin: 20px 0 10px">
+                  Technical Specifications:
+                </h4>
+                <table style="width: 100%; border-collapse: collapse">
+                  <tbody id="modalSpecs">
+                    <!-- Specs will be added dynamically -->
+                  </tbody>
+                </table>
+
+                <div class="inquiry-form">
+                  <h4 style="color: var(--white); margin-bottom: 15px">
+                    Interested in this product?
+                  </h4>
+                  <form>
+                    <input
+                      type="text"
+                      placeholder="Your Name"
+                      class="contact-input"
+                      style="margin-bottom: 10px"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Quantity Required"
+                      class="contact-input"
+                      style="margin-bottom: 10px"
+                    />
+                    <textarea
+                      placeholder="Additional Requirements"
+                      class="contact-input"
+                      style="margin-bottom: 15px; height: 100px"
+                    ></textarea>
+                    <button type="button" class="btn-submit">
+                      Send Inquiry
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Section -->
+        <section class="section contact" id="contact">
+          <div class="container">
+            <div class="contact-card">
+              <p class="card-subtitle">Don't be shy</p>
+
+              <h2 class="h2 section-title">Feel Free to Contact us.</h2>
+
+              <div class="wrapper">
+                <form action="" class="contact-form">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    required
+                    class="contact-input"
+                  />
+
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                    class="contact-input"
+                  />
+
+                  <textarea
+                    name="message"
+                    placeholder="Your Message / Product Interest"
+                    required
+                    class="contact-input"
+                  ></textarea>
+
+                  <button type="submit" class="btn-submit">
+                    Submit Message
+                  </button>
+                </form>
+
+                <ul class="contact-list">
+                  <li class="contact-item">
+                    <div class="contact-icon">
+                      <ion-icon name="location"></ion-icon>
+                    </div>
+
+                    <div>
+                      <h3 class="contact-item-title">Address</h3>
+
+                      <address class="contact-item-link">
+                        219, 2<sup>nd</sup> Floor, Kalp Business Park, Near
+                        Sahjanand Business Park, Sardar Patel Ring Road, Nikol,
+                        Ahmedabad – 382350
+                      </address>
+                    </div>
+                  </li>
+
+                  <li class="contact-item">
+                    <div class="contact-icon">
+                      <ion-icon name="mail"></ion-icon>
+                    </div>
+
+                    <link
+                      rel="stylesheet"
+                      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+                    />
+
+                    <div class="contact-container">
+                      <h3 class="contact-item-title">Email</h3>
+
+                      <div class="contact-child">
+                        <a
+                          href="mailto:support@unitradenexus.com"
+                          class="contact-item-link"
+                        >
+                          support@unitradenexus.com
+                        </a>
+                        <button
+                          onclick="copyToClipboard('support@unitradenexus.com')"
+                          class="copy-btn"
+                          title="Copy Email"
+                        >
+                          <i class="fa-regular fa-copy"></i>
+                        </button>
+                      </div>
+
+                      <div class="contact-child">
+                        <a
+                          href="mailto:sales@unitradenexus.com"
+                          class="contact-item-link"
+                        >
+                          sales@unitradenexus.com
+                        </a>
+                        <button
+                          onclick="copyToClipboard('sales@unitradenexus.com')"
+                          class="copy-btn"
+                          title="Copy Email"
+                        >
+                          <i class="fa-regular fa-copy"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright">
+          &copy; 2025 <a href="#" class="copyright-link">Unitrade Nexus</a>. All
+          Rights Reserved
+        </p>
+      </div>
+    </footer>
+
+    <div id="customAlert" class="custom-alert">
+      Thank you! Message sent successfully.
+    </div>
+
+    <a href="#top" class="back-to-top" data-back-to-top>BACK TOP</a>
+
+    <!-- Product data -->
+    <script>
+      // Product data storage
+      const productData = {
+        "universal-stainer-blue": {
+          title: "Universal Stainer - Blue",
+          image: "./assets/images/Products/shade.jfif",
+          description:
+            "Our premium Universal Stainer in Blue is formulated with high-quality pigments for exceptional color consistency and performance. This versatile stainer can be mixed with both water-based and oil-based paints to create custom colors with excellent lightfastness and weather resistance.",
+          features: [
+            "High pigment concentration for vibrant colors",
+            "Compatible with all paint types including emulsions and enamels",
+            "Weather and UV resistant for long-lasting color stability",
+            "Easy to mix and disperse evenly",
+            "Non-settling formula maintains color consistency",
+          ],
+          specs: [
+            { name: "Volume", value: "100ml, 250ml, 1L" },
+            { name: "Base Type", value: "Universal (Water & Oil Compatible)" },
+            { name: "Pigment Content", value: "40-45%" },
+            { name: "Shelf Life", value: "36 months when properly stored" },
+            { name: "Coverage", value: "Depends on dilution ratio" },
+            { name: "Drying Time", value: "As per base paint specifications" },
+          ],
+        },
+        "universal-stainer-red": {
+          title: "Universal Stainer - Red",
+          image: "/api/placeholder/400/320",
+          description:
+            "A high-performance red stainer with superior color depth and tinting strength. Specially engineered for precise color matching and excellent integration with various paint bases while maintaining color stability over time.",
+          features: [
+            "Rich, vibrant red tone with excellent opacity",
+            "UV resistant formulation prevents fading",
+            "Easy to blend with minimal effort",
+            "Consistent color results across different applications",
+            "Non-toxic and low VOC content",
+          ],
+          specs: [
+            { name: "Volume", value: "100ml, 250ml, 1L" },
+            { name: "Base Type", value: "Universal (Water & Oil Compatible)" },
+            { name: "Pigment Content", value: "42-47%" },
+            { name: "Shelf Life", value: "36 months when properly stored" },
+            { name: "Coverage", value: "Depends on dilution ratio" },
+            { name: "Drying Time", value: "As per base paint specifications" },
+          ],
+        },
+        "industrial-solvent": {
+          title: "Industrial Solvent",
+          image: "/api/placeholder/400/320",
+          description:
+            "A professional-grade industrial solvent designed for effective cleaning and paint thinning applications. Our formula offers superior dissolving power while maintaining workplace safety standards.",
+          features: [
+            "Fast evaporation rate for efficient work processes",
+            "High solvency power for stubborn residues",
+            "99.9% purity guaranteed for consistent performance",
+            "Low odor compared to conventional solvents",
+            "Available in various grades for specific applications",
+          ],
+          specs: [
+            { name: "Volume", value: "1L, 5L, 20L, 200L" },
+            { name: "Density", value: "0.78-0.82 g/cm³" },
+            { name: "Flash Point", value: "7°C" },
+            { name: "Evaporation Rate", value: "3.5 (Butyl Acetate = 1)" },
+            { name: "Purity", value: "99.9%" },
+            {
+              name: "Applications",
+              value: "Degreasing, Paint thinning, Surface prep",
+            },
+          ],
+        },
+        "growth-stimulator": {
+          title: "Organic Plant Growth Stimulator",
+          image: "/api/placeholder/400/320",
+          description:
+            "A 100% organic plant growth enhancer developed to boost crop yields naturally while promoting soil health. Our unique formula stimulates root development and overall plant vigor without harmful chemicals.",
+          features: [
+            "100% organic formulation safe for all crops",
+            "Increases yield by up to 30% in controlled studies",
+            "Enhances nutrient uptake and utilization",
+            "Strengthens plant natural defense mechanisms",
+            "Improves soil microbial activity",
+          ],
+          specs: [
+            { name: "Volume", value: "250ml, 1L, 5L, 20L" },
+            {
+              name: "Composition",
+              value: "Seaweed extract, Amino acids, Humic acids",
+            },
+            { name: "Application Rate", value: "5-10ml per liter of water" },
+            { name: "Certification", value: "Organic certified" },
+            { name: "Shelf Life", value: "24 months from manufacturing date" },
+            {
+              name: "Compatibility",
+              value: "Can be mixed with most fertilizers",
+            },
+          ],
+        },
+        "specialized-adhesive": {
+          title: "Specialized Adhesive",
+          image: "/api/placeholder/400/320",
+          description:
+            "High-performance industrial adhesive engineered for applications requiring exceptional bond strength and durability under challenging conditions. Ideal for construction, automotive, and manufacturing industries.",
+          features: [
+            "Resistant to temperatures from -40°C to +150°C",
+            "Waterproof and resistant to most chemicals",
+            "Fast curing time with initial set in 5-10 minutes",
+            "Fills gaps up to 5mm while maintaining strength",
+            "Low shrinkage for precise applications",
+          ],
+          specs: [
+            { name: "Volume", value: "50ml, 250ml, 1L" },
+            { name: "Bond Strength", value: "25-30 MPa (tensile)" },
+            { name: "Working Time", value: "5-10 minutes at 25°C" },
+            { name: "Full Cure", value: "24 hours" },
+            { name: "Temperature Range", value: "-40°C to +150°C" },
+            { name: "Chemical Base", value: "Modified epoxy" },
+          ],
+        },
+        "universal-stainer-yellow": {
+          title: "Universal Stainer - Yellow",
+          image: "/api/placeholder/400/320",
+          description:
+            "A brilliant yellow universal stainer with high tinting strength perfect for achieving precise color matches in various paint bases. Its concentrated formula ensures vibrant results with minimal product usage.",
+          features: [
+            "Excellent lightfastness for long-lasting color",
+            "Highly concentrated formula for economical use",
+            "Smooth integration with all base paints",
+            "Non-settling and easy to mix",
+            "Consistent batch-to-batch color matching",
+          ],
+          specs: [
+            { name: "Volume", value: "100ml, 250ml, 1L" },
+            { name: "Base Type", value: "Universal (Water & Oil Compatible)" },
+            { name: "Pigment Content", value: "41-46%" },
+            { name: "Shelf Life", value: "36 months when properly stored" },
+            { name: "Coverage", value: "Depends on dilution ratio" },
+            { name: "Drying Time", value: "As per base paint specifications" },
+          ],
+        },
+      };
+
+      // Filter functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        // Filter buttons
+        const filterBtns = document.querySelectorAll(".filter-btn");
+        const productItems = document.querySelectorAll(".product-item");
+
+        filterBtns.forEach((btn) => {
+          btn.addEventListener("click", function () {
+            // Remove active class from all buttons
+            filterBtns.forEach((b) => b.classList.remove("active"));
+            // Add active class to clicked button
+            this.classList.add("active");
+
+            const filter = this.getAttribute("data-filter");
+
+            productItems.forEach((item) => {
+              if (
+                filter === "all" ||
+                item.getAttribute("data-category") === filter
+              ) {
+                item.style.display = "block";
+              } else {
+                item.style.display = "none";
+              }
+            });
+          });
+        });
+
+        // Modal functionality
+        const modal = document.getElementById("productModal");
+        const modalImage = document.getElementById("modalImage");
+        const modalTitle = document.getElementById("modalTitle");
+        const modalDescription = document.getElementById("modalDescription");
+        const modalFeatures = document.getElementById("modalFeatures");
+        const modalSpecs = document.getElementById("modalSpecs");
+        const closeModal = document.querySelector(".close-modal");
+        const detailBtns = document.querySelectorAll(".product-details-btn");
+
+        detailBtns.forEach((btn) => {
+          btn.addEventListener("click", function () {
+            const productId = this.getAttribute("data-product");
+            const product = productData[productId];
+
+            if (product) {
+              // Populate modal with product data
+              modalImage.src = product.image;
+              modalImage.alt = product.title;
+              modalTitle.textContent = product.title;
+              modalDescription.textContent = product.description;
+
+              // Clear and populate features
+              modalFeatures.innerHTML = "";
+              product.features.forEach((feature) => {
+                const li = document.createElement("li");
+                li.textContent = feature;
+                modalFeatures.appendChild(li);
+              });
+
+              // Clear and populate specs
+              modalSpecs.innerHTML = "";
+              product.specs.forEach((spec) => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                  <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1); color: var(--cadet-blue-crayola);">${spec.name}</td>
+                  <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1); color: var(--white);">${spec.value}</td>
+                `;
+                modalSpecs.appendChild(row);
+              });
+
+              // Show modal
+              modal.style.display = "block";
+            }
+          });
+        });
+
+        // Close modal
+        closeModal.addEventListener("click", function () {
+          modal.style.display = "none";
+        });
+
+        // Close modal when clicking outside
+        window.addEventListener("click", function (event) {
+          if (event.target === modal) {
+            modal.style.display = "none";
+          }
+        });
+
+        // Form submission for inquiry forms
+        document.querySelectorAll(".btn-submit").forEach((button) => {
+          button.addEventListener("click", function () {
+            const form = this.closest("form");
+            const customAlert = document.getElementById("customAlert");
+
+            // Simple validation
+            let valid = true;
+            form.querySelectorAll("input, textarea").forEach((input) => {
+              if (input.required && !input.value.trim()) {
+                valid = false;
+              }
+            });
+
+            if (valid) {
+              customAlert.textContent =
+                "Thank you! Your inquiry has been sent.";
+              customAlert.classList.add("show");
+              customAlert.classList.remove("error");
+              form.reset();
+
+              // Hide modal if in modal
+              if (this.closest(".product-modal")) {
+                setTimeout(() => {
+                  modal.style.display = "none";
+                }, 2000);
+              }
+
+              setTimeout(() => {
+                customAlert.classList.remove("show");
+              }, 3000);
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
+
