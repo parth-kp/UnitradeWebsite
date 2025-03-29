@@ -1056,3 +1056,29 @@ textarea.contact-input {
   .footer-list { margin-inline: 0; }
 
 }
+
+.custom-alert {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #28a745; /* Green success color */
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  text-align: center;
+}
+
+.custom-alert.show {
+  display: block;
+  animation: fadeIn 0.3s ease-out, fadeOut 0.5s ease-in 2.5s forwards;
+}
+
+.custom-alert.error {
+  background: #d02b2b; /* Green success color */
+}
