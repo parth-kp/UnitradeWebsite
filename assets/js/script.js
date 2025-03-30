@@ -97,3 +97,12 @@ function copyToClipboard(text) {
     }, 2000);
   });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".products-card .card-banner").forEach((banner) => {
+    const img = banner.querySelector("img");
+    if (img) {
+      banner.style.setProperty("--banner-bg", `url(${img.src})`);
+    }
+  });
+});

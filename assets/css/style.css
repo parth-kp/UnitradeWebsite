@@ -638,14 +638,31 @@ textarea.contact-input {
 }
 
 .products-card .card-banner {
-  background-color: var(--independence);
-  border-radius: var(--radius-15);
+  position: relative;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
-  margin-block-end: 20px;
+  border-radius: var(--radius-15);
 }
 
 .products-card .card-banner img {
   transition: var(--transition-2);
+  height: 300px;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.products-card .card-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--banner-bg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  z-index: -1;
 }
 
 .products-card .card-banner a:is(:hover, :focus) img {
